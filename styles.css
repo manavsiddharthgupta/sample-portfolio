@@ -116,7 +116,7 @@ li a:hover:after {
     transform: scale(1.2);
 }
 .header{
-    height: 550px;
+    height: 100vh;
     position: relative;
     background-image: url('/Portfolio/img/giphy (1).gif');
     background-repeat: no-repeat;
@@ -540,7 +540,10 @@ input[type='radio']:checked:after {
     
     .container{
         position: relative;
-        padding: 25px 0px 10px 0px;
+        padding: 0px 0px 10px 0px;
+    }
+    .header{
+        height: 90vh;
     }
 }
 @media (max-width: 460px) {

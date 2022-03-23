@@ -9,44 +9,26 @@ const allArticle = document.querySelector(".allArticle");
 toggle1.checked = true;
 
 radio_buttons.addEventListener('click',(e)=>{
-    if (e.target == toggle1 || e.target == toggle2) {
-        clearInterval(intv);
-        check(toggle1,toggle2);
+    clearInterval(intv);
+    if (e.target == toggle2) {
+        wave.style.display = "none";
+        header.style.backgroundImage = "url('https://i.pinimg.com/originals/70/00/82/700082fda66b852d689cde9ec55c3e3b.gif')"
+        shortbio_resume.style.display = "block";
+    }
+    if(e.target == toggle1){
+        shortbio_resume.style.display = "none";
+        header.style.backgroundImage = "url('./img/giphy\ \(1\).gif')"
+        wave.style.display = "block";
     }
 })
-function check(tog1,tog2) {
-    if (tog2.checked) {
-        wave.style.display = "none";
-        header.style.opacity = "0";
-        header.style.backgroundImage = "url('https://i.pinimg.com/originals/70/00/82/700082fda66b852d689cde9ec55c3e3b.gif')"
-        setTimeout(()=>{
-            header.style.opacity = "1";
-            setTimeout(()=>{
-                shortbio_resume.style.display = "block";
-            },400)
-            
-        },150)
-    } else {
-        shortbio_resume.style.display = "none";
-        header.style.opacity = "0";
-        header.style.backgroundImage = "url('https://media2.giphy.com/media/xUA7bdpLxQhsSQdyog/giphy.gif?cid=790b761159bf16a798790da93a9d9ced9dad76959eb6e64f&rid=giphy.gif&ct=g')"
-        setTimeout(()=>{
-            header.style.opacity = "1";
-            setTimeout(()=>{
-                wave.style.display = "block";
-            },400)
-            
-        },150)
-        
-    }
-}
+
 const intv = setInterval(()=>{
     if (toggle2.checked) {
         toggle2.checked = false;
         shortbio_resume.style.display = "none";
         toggle1.checked = true;
         wave.style.display = "block";
-        header.style.backgroundImage = "url('https://media2.giphy.com/media/xUA7bdpLxQhsSQdyog/giphy.gif?cid=790b761159bf16a798790da93a9d9ced9dad76959eb6e64f&rid=giphy.gif&ct=g')"
+        header.style.backgroundImage = "url('./img/giphy\ \(1\).gif')"
         
     } else {
         toggle1.checked = false;

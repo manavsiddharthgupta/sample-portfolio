@@ -118,7 +118,7 @@ li a:hover:after {
 .header{
     height: 100vh;
     position: relative;
-    background-image: url('/Portfolio/img/giphy (1).gif');
+    background-image: url('./img/giphy\ \(1\).gif');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -432,7 +432,7 @@ input[type='radio']:checked:after {
     display: inline;
 }
 .contact{
-    padding: 150px 4em 150px 3em;
+    padding: 130px 4em 150px 3em;
 }
 .contact h2{
     font-size: 1.15em;
@@ -451,10 +451,10 @@ input[type='radio']:checked:after {
     display: inline-block;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 300;
     color: #10002b;
     text-decoration: none;
-    margin-left: 2em;
+    margin-left: 0.5em;
 }
 .address{
     display: flex;
@@ -463,14 +463,14 @@ input[type='radio']:checked:after {
 }
 .address-img{
     background-color: #10002b;
-    margin-right: 2em;
+    margin-right: 0.8em;
     border-radius: 5%;
 }
 .add-desc{
     text-align: center;
     width: 100px;
     height: fit-content;
-    margin-left: 2em;
+    margin-left: 0.5em;
 }
 .add-desc h3{
     font-family: 'Josefin Sans', sans-serif;

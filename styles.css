@@ -28,6 +28,7 @@ html{
     padding: 2.5em 2.2em;
     background-color: #10002b;
     overflow: scroll;
+    z-index: 2;
 }
 .main-content{
     margin-left: 280px;
@@ -161,8 +162,8 @@ input{
     margin-bottom: 1em;
 }
 input[type='radio']:after {
-    width: 10px;
-    height: 10px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     position: relative;
     background-color: black;
@@ -175,8 +176,8 @@ input[type='radio']:after {
 }
 
 input[type='radio']:checked:after {
-    width: 10px;
-    height: 10px;
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     position: relative;
     background-color: rgb(0, 0, 0);
@@ -393,6 +394,79 @@ input[type='radio']:checked:after {
 .project-and-experience{
     padding: 150px 4em 100px 3em;
 }
+
+.projects{
+    border-left: 5px solid #ebebf0;
+    padding-left: 2em;
+    position: relative;
+}
+.project-and-experience h3{
+    padding: 8px 1em 4em 0em;
+    font-size: 1.35em;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 3.5px;
+    font-weight: 600;
+
+}
+.project1{
+    background-color: #ebebf0;
+    height: 28em;
+    position: relative;
+}
+.project2{
+    margin-top: 1em;
+    background-color: #ebebf0;
+    height: 28em;
+    position: relative;
+}
+.project3{
+    margin-top: 1em;
+    background-color: #ebebf0;
+    height: 28em;
+    position: relative;
+}
+.node{
+    z-index: 1;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: -57px;
+    border-radius: 50%;
+    background-color: rgb(41, 98, 255);
+    border: 4px solid #ebebf0;
+    padding: 7px;
+}
+.node img{
+    width: 100%;
+    height: 100%;
+}
+div.node2{
+    background-color: #1abc9c;
+}
+div.node3{
+    background-color: #ed687c;
+}
+.endNode{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 5px solid #ebebf0;
+    top: 100%;
+    left: -17px;
+    border-radius: 50%;
+}
+.arrow-left {
+    position: absolute;
+    left: -1%;
+    top: 2%;
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid #ebebf0; 
+  }
+
+
 .my-article{
     padding: 150px 4em 100px 3em;
 }
@@ -571,5 +645,8 @@ input[type='radio']:checked:after {
     .header-wave{
         width: 330px;
         left: 20px;
+    }
+    .projects{
+        margin-left: 5px;
     }
 }

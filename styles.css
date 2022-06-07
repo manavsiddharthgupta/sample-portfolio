@@ -425,7 +425,7 @@ input[type="radio"]:checked:after {
   left: -57px;
   top: -2%;
   border-radius: 50%;
-  background-color: rgb(41, 98, 255);
+  background-color: #2962ff;
   border: 4px solid #ebebf0;
   padding: 7px;
 }
@@ -460,6 +460,10 @@ div.node3 {
 }
 .pr {
   padding: 6%;
+  border-radius: 5px;
+}
+.pr:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .projectHeadLine {
@@ -470,13 +474,63 @@ div.node3 {
   color: black;
 }
 .descriptionOnproject {
-  margin-top: 1.5em;
+  margin-top: 1em;
   font-family: "Nunito", sans-serif;
   line-height: 1.5em;
   letter-spacing: 0.6px;
   word-spacing: 1px;
 }
-
+.techstack{
+  margin-top: 1em;
+  margin-left: 0em;
+}
+.techstack span{
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+  display: inline-block;
+  border: 1px solid rgb(41, 98, 255);
+  padding: 0.6em 1em 0.4em 1em;
+  border-radius: 5px;
+}
+.techstack span:hover{
+  background-color: #2962ff;
+  color: white;
+}
+.project{
+  margin-top: 1em;
+  margin-left: 0;
+}
+.btn_livedemo{
+  padding: 0.8em 1.25em 0.7em 1.5em;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 18px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  width: fit-content;
+  border: none;
+  color: white;
+  background-color: #10002b;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+.btn_livedemo span{
+  margin-left: 5px;
+  display: inline-block;
+  color: white;
+  width: 17px;
+  height: 17px;
+}
+.btn_livedemo span img{
+  width: 100%;
+  height: 100%;
+}
+.btn_livedemo:hover{
+  background-color: #240160;
+}
 .my-article {
   padding: 150px 4em 100px 3em;
 }
